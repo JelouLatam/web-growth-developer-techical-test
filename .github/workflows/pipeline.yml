@@ -1,0 +1,26 @@
+name: Pipeline
+
+on:
+    pull_request:
+        branches:
+            - master
+    push:
+        branches:
+            - master
+
+jobs:
+    ci:
+        uses: JelouLatam/actions/.github/workflows/ci-node.yml@v1
+        with:
+            build: true
+        secrets: inherit
+
+    security:
+        uses: JelouLatam/actions/.github/workflows/security.yml@v1
+        secrets: inherit
+
+    sync:
+        needs: [ci, security]
+        if: github.event_name == 'push'
+        uses: JelouLatam/actions/.github/workflows/sync.yml@v1
+        secrets: inherit
