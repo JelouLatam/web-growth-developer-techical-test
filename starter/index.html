@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowbase for HR — Automated Onboarding Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-brand">Flowbase</div>
+            <a href="#demo-form" class="nav-cta btn btn-primary btn-sm" onclick="trackCTA('nav_cta')">Request a Demo</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <div class="container">
+            <span class="badge">New: Flowbase for HR</span>
+            <h1 id="hero-headline">Automated onboarding that connects HR, IT, and payroll in one workflow</h1>
+            <p class="hero-subtitle">Reduce onboarding time by 50% while ensuring every step is completed — from offer letter to first-day setup.</p>
+            <div class="hero-ctas">
+                <a href="#demo-form" class="btn btn-accent" data-track="cta_click" data-label="hero_primary">Request a Demo</a>
+                <a href="#how-it-works" class="btn btn-outline" data-track="cta_click" data-label="hero_secondary">See How It Works</a>
+            </div>
+            <div class="hero-proof">
+                <span>Trusted by 200+ mid-market companies</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pain Points -->
+    <section class="section section-gray" id="pain-points">
+        <div class="container">
+            <h3 class="section-title">Sound familiar?</h3>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h4>Manual processes that don't scale</h4>
+                    <p>You're still using spreadsheets and email chains to onboard new hires.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👁️</div>
+                    <h4>No visibility into progress</h4>
+                    <p>You can't tell where each new hire is in their onboarding journey.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔌</div>
+                    <h4>Disconnected tools</h4>
+                    <p>HRIS, payroll, IT provisioning — none of them talk to each other.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h4>Compliance risks</h4>
+                    <p>Inconsistent processes mean things fall through the cracks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section" id="solution">
+        <div class="container">
+            <h3 class="section-title">One platform for the entire employee lifecycle</h3>
+            <p class="section-subtitle">Flowbase connects your existing tools and automates every step.</p>
+            <div class="grid grid-2">
+                <div class="feature">
+                    <h4>Workflow Automation</h4>
+                    <p>Build custom onboarding workflows that trigger across HR, IT, and payroll — automatically.</p>
+                </div>
+                <div class="feature">
+                    <h4>Real-time Dashboards</h4>
+                    <p>See exactly where every employee is in their lifecycle journey, in real time.</p>
+                </div>
+                <div class="feature">
+                    <h4>Built-in Compliance</h4>
+                    <p>Compliance checks that adapt to your region and role type. No more manual audits.</p>
+                </div>
+                <div class="feature">
+                    <h4>50+ Integrations</h4>
+                    <p>Connects with your HRIS, Slack, Google Workspace, and the tools you already use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-gray" id="how-it-works">
+        <div class="container">
+            <h3 class="section-title">How it works</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Connect your tools</h4>
+                    <p>Integrate your HRIS, payroll, and IT systems in minutes.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Build your workflows</h4>
+                    <p>Create automated onboarding flows with our visual builder.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Onboard with confidence</h4>
+                    <p>Every new hire gets a consistent, trackable experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h3 class="section-title">What HR leaders are saying</h3>
+            <div class="grid grid-3">
+                <div class="testimonial">
+                    <p class="testimonial-quote">"We reduced onboarding time from 3 weeks to 4 days."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Chen</strong>
+                        <span>VP People, TechScale (400 employees)</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"Finally, one place to see where every new hire is in their journey."</p>
+                    <div class="testimonial-author">
+                        <strong>Marcus Williams</strong>
+                        <span>HR Director, GrowthOps</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"The compliance automation alone saved us 20 hours per month."</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Patel</strong>
+                        <span>People Ops Manager, ScaleUp Inc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Form -->
+    <section class="section section-dark" id="demo-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-content">
+                    <h3>Ready to transform your onboarding?</h3>
+                    <p>See how Flowbase can automate your employee lifecycle in a 15-minute demo.</p>
+                    <ul class="form-benefits">
+                        <li>✓ Personalized walkthrough of your use case</li>
+                        <li>✓ See real ROI calculations for your company size</li>
+                        <li>✓ No commitment required</li>
+                    </ul>
+                </div>
+                <form id="demo-request-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Jane Smith">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="work-email" name="email" required placeholder="jane@company.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-size">Company Size</label>
+                        <select id="company-size" name="company_size" required>
+                            <option value="">Select company size</option>
+                            <option value="1-50">1–50 employees</option>
+                            <option value="51-200">51–200 employees</option>
+                            <option value="201-500">201–500 employees</option>
+                            <option value="501-2000">501–2,000 employees</option>
+                            <option value="2000+">2,000+ employees</option>
+                        </select>
+                        <span class="error-message" id="company-size-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full" data-track="cta_click" data-label="form_submit_btn">Request a Demo</button>
+                </form>
+                <div id="form-success" class="form-success" style="display: none;">
+                    <h3>Thank you!</h3>
+                    <p>We'll be in touch within 24 hours to schedule your personalized demo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Flowbase</div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <p class="footer-legal">© 2026 Flowbase, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to improve your experience and measure site performance.</p>
+        <div class="cookie-actions">
+            <button id="accept-cookies" class="btn btn-accent btn-sm">Accept</button>
+            <button id="decline-cookies" class="btn btn-outline btn-sm">Decline</button>
+        </div>
+    </div>
+
+</body>
+</html>
