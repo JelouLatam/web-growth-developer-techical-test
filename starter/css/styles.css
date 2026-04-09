@@ -1,0 +1,491 @@
+/* Flowbase HR Landing Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #0F172A;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---- Navigation ---- */
+
+.nav {
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #2563EB;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1D4ED8;
+}
+
+.btn-accent {
+    background: #10B981;
+    color: white;
+}
+
+.btn-accent:hover {
+    background: #059669;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #2563EB;
+    color: #2563EB;
+}
+
+.btn-outline:hover {
+    background: #2563EB;
+    color: white;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+/* ---- Hero ---- */
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #EFF6FF;
+    color: #2563EB;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    max-width: 720px;
+    margin: 0 auto 24px;
+    color: #0F172A;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #475569;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.hero-proof {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* ---- Sections ---- */
+
+.section {
+    padding: 80px 0;
+}
+
+.section-gray {
+    background: #F8FAFC;
+}
+
+.section-dark {
+    background: #0F172A;
+    color: white;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #475569;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+/* ---- Grid ---- */
+
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* ---- Cards ---- */
+
+.card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.card h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #475569;
+    font-size: 15px;
+}
+
+/* ---- Features ---- */
+
+.feature {
+    padding: 24px;
+    border-radius: 12px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+}
+
+.feature h4 {
+    margin-bottom: 8px;
+    color: #2563EB;
+}
+
+.feature p {
+    color: #475569;
+}
+
+/* ---- Steps ---- */
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 48px;
+}
+
+.step {
+    text-align: center;
+    max-width: 280px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2563EB;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto 16px;
+}
+
+.step h4 {
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: #475569;
+    font-size: 15px;
+}
+
+/* ---- Testimonials ---- */
+
+.testimonial {
+    padding: 32px;
+    background: #F8FAFC;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+}
+
+.testimonial-quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 16px;
+    color: #1E293B;
+}
+
+.testimonial-author strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.testimonial-author span {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* ---- Form Section ---- */
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.form-content h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.form-content p {
+    color: #94A3B8;
+    margin-bottom: 24px;
+}
+
+.form-benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.form-benefits li {
+    padding: 8px 0;
+    color: #CBD5E1;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #CBD5E1;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #1E293B;
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: #64748B;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.error-message {
+    color: #EF4444;
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+.form-success {
+    text-align: center;
+    padding: 48px;
+}
+
+.form-success h3 {
+    color: #10B981;
+    margin-bottom: 8px;
+}
+
+/* ---- Footer ---- */
+
+.footer {
+    padding: 32px 0;
+    border-top: 1px solid #E2E8F0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #64748B;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #2563EB;
+}
+
+.footer-legal {
+    color: #94A3B8;
+    font-size: 13px;
+}
+
+/* ---- Cookie Banner ---- */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1E293B;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-banner p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .cookie-banner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
